@@ -3,11 +3,19 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import H1 from '../components/H1.astro';
 import Main from '../components/Main.astro';
+
+export const prerender = true;
 ---
 
 <Layout title="Rhythm Nation Blog">
 	<Main>
-		<H1 text="Rhythm Nation" />
+		<H1 text="Rhythm Nation Blog" />
+		<img
+            src="../../public/images/band.jpg"
+            width={1024}
+            height={1024 / 1.5}
+            class="rounded-2xl shadow-xl mb-4 aspect-thumbnail object-cover"
+        />	  
 	</Main>
 </Layout>
 
